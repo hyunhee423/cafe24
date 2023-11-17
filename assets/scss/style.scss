@@ -1,0 +1,16 @@
+@import './utils/var'; //변수세팅
+@import './utils/mixin'; //재활용가능한소스
+
+@import './base/typo'; //폰트
+@import './base/reset'; //리셋
+@import './base/common'; //공통
+
+
+@import './layout/header'; //헤더
+@import './layout/nav'; //메뉴
+@import './layout/footer';//푸터
+
+
+@import './pages/main'; //메인
+// @import './product/detail'; 
+// @import './product/list'; 

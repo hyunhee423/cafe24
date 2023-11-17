@@ -1,0 +1,195 @@
+.footer {
+    width: 100%;
+    background-color: #162038;
+    position: relative;
+
+    .top-wrap {
+        background-color: transparent;
+        max-width: 1408px;
+        width: 100%;
+        padding: 0 24px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: absolute;
+        margin: 0 auto;
+        top: -48px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+    }
+
+    .top-btn {
+        background: url(//img.echosting.cafe24.com/api/partner/front/images/icons/scroll-to-top.png) center;
+        width: 48px;
+        height: 48px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .footer-wrap {
+        color: #fff;
+        margin: auto;
+        padding: 64px 24px;
+
+        .top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 84px;
+
+            h5 {
+                color: #FFFFFF;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 25px;
+                letter-spacing: -0.2px;
+                padding-bottom: 11px;
+
+                &.link-list {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        margin-left: 14px;
+                        width: 6px;
+                        height: 4px;
+                    }
+                }
+            }
+
+            .f-logo {
+                img {
+                    float: right;
+                    width: 53px;
+                    height: 53px;
+                }
+            }
+
+            .group {
+                position: relative;
+
+                ul {
+                    li {
+                        padding: 5px 0 2px;
+
+                        a {
+                            font-size: 14px;
+                            line-height: 25px;
+                            letter-spacing: -0.2px;
+                            color: #AEB4C6;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .partners-list {
+                    li {
+                        a {
+                            &::after {
+                                content: '';
+                                display: inline-block;
+                                mask-image: url("data:image/svg+xml,%3Csvg width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.9536 0.377056C10.923 0.303508 10.8784 0.236655 10.8222 0.180278L10.8197 0.177834C10.7054 0.063797 10.5504 -0.000166526 10.3889 3.25611e-07H6.72222C6.56015 3.25611e-07 6.40471 0.064385 6.2901 0.178991C6.1755 0.293596 6.11111 0.449035 6.11111 0.611111C6.11111 0.773188 6.1755 0.928627 6.2901 1.04323C6.40471 1.15784 6.56015 1.22222 6.72222 1.22222H8.91367L4.45683 5.67906C4.39847 5.73543 4.35191 5.80286 4.31988 5.87742C4.28785 5.95198 4.271 6.03217 4.27029 6.11331C4.26959 6.19445 4.28505 6.27492 4.31578 6.35003C4.3465 6.42513 4.39188 6.49336 4.44926 6.55074C4.50664 6.60812 4.57487 6.6535 4.64997 6.68422C4.72508 6.71495 4.80555 6.73041 4.88669 6.72971C4.96783 6.729 5.04802 6.71215 5.12258 6.68012C5.19714 6.64809 5.26457 6.60153 5.32094 6.54317L9.77778 2.08633V4.27778C9.77778 4.43985 9.84216 4.59529 9.95677 4.7099C10.0714 4.8245 10.2268 4.88889 10.3889 4.88889C10.551 4.88889 10.7064 4.8245 10.821 4.7099C10.9356 4.59529 11 4.43985 11 4.27778V0.611111V0.609278C11 0.529834 10.9841 0.451611 10.9536 0.377056ZM0 3.05556C0 2.24517 0.321924 1.46798 0.894952 0.894952C1.46798 0.321924 2.24517 3.25611e-07 3.05556 3.25611e-07H3.66667C3.82874 3.25611e-07 3.98418 0.064385 4.09879 0.178991C4.21339 0.293596 4.27778 0.449035 4.27778 0.611111C4.27778 0.773188 4.21339 0.928627 4.09879 1.04323C3.98418 1.15784 3.82874 1.22222 3.66667 1.22222H3.05556C2.56933 1.22222 2.10301 1.41538 1.75919 1.75919C1.41538 2.10301 1.22222 2.56933 1.22222 3.05556V7.94445C1.22222 8.43068 1.41538 8.89699 1.75919 9.24081C2.10301 9.58462 2.56933 9.77778 3.05556 9.77778H7.94444C8.43067 9.77778 8.89699 9.58462 9.24081 9.24081C9.58462 8.89699 9.77778 8.43068 9.77778 7.94445V7.33333C9.77778 7.17126 9.84216 7.01582 9.95677 6.90121C10.0714 6.78661 10.2268 6.72222 10.3889 6.72222C10.551 6.72222 10.7064 6.78661 10.821 6.90121C10.9356 7.01582 11 7.17126 11 7.33333V7.94445C11 8.75483 10.6781 9.53202 10.105 10.105C9.53202 10.6781 8.75483 11 7.94444 11H3.05556C2.24517 11 1.46798 10.6781 0.894952 10.105C0.321924 9.53202 0 8.75483 0 7.94445V3.05556Z' fill='%23AEB4C6'/%3E%3C/svg%3E");
+                                width: 11px;
+                                height: 11px;
+                                margin-left: 10px;
+                                background-color: #AEB4C6;
+                            }
+                        }
+                    }
+                }
+
+                .site-list {
+                    z-index: 10;
+                    background-color: #FFFFFF;
+                    position: absolute;
+                    top: 32px;
+                    left: 0;
+                    border-radius: 4px;
+                    -webkit-box-shadow: 0 1px 10px 0 rgb(0 0 0 / 8%);
+                    box-shadow: 0 1px 10px 0rgba(0, 0, 0, .08);
+                    border: 1px solid #e8e8e8;
+                    width: 140px;
+                    padding: 12px 0;
+                    height: auto;
+                    display: none;
+
+                    li {
+                        &.line {
+                            margin-top: 8px;
+                            padding-top: 8px;
+                            border-top: 1px solid #EEEEEE;
+                        }
+
+                        a {
+                            color: #959595;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 25px;
+                            letter-spacing: -1px;
+                            padding: 6px 15px;
+                            display: flex;
+                            height: 100%;
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            color: #AEB4C6;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 25px;
+            letter-spacing: -1px;
+
+            p {
+                margin-bottom: 3px;
+                letter-spacing: -0.2px;
+
+                &.last {
+                    margin-top: 17px;
+                    margin-bottom: 5px;
+                }
+            }
+
+            .link {
+                color: #AEB4C6;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: -0.2px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 23px;
+                margin-top: 27px;
+                border-top: 1px solid #444B59;
+
+                .f-menu {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    li {
+                        margin-left: 10px;
+                        &.bold{
+                            a{
+                                color: #FFFFFF;
+                            }
+                        }
+                        a {
+                            color: #AEB4C6;
+                            letter-spacing: -0.2px;
+                        }
+                        
+                    }
+
+                }
+            }
+        }
+    }
+
+}

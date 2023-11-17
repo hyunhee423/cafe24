@@ -1,0 +1,65 @@
+@mixin pos-c{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin pos-vt{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin pos-hr{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+@mixin ellipsis($line:1){
+
+    @if($line > 1){
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: $line;
+        -webkit-box-orient: vertical;
+    }
+    @else{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+          
+          
+}
+
+$pc:1280px;
+$mobile:767px;
+
+// $pc:
+// $tablet:
+// $mobile:
+@mixin pc() {
+    /* 노트북 & PC (해상도 1024px)*/
+    @media(max-width:$pc) {
+        @content;
+    }
+}
+
+// @mixin tablet() {
+//     /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+//     @media all and (max-width:1023px) {
+//         @content;
+//     }
+// }
+
+@mixin mobile() {
+    /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+    @media (max-width:$mobile) {
+        @content;
+    }
+
+}

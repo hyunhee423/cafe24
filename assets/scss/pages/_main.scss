@@ -1,0 +1,949 @@
+#Main {
+    background-color: #F4F8FE;
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+
+    @include pc {
+        margin-top: 68px;
+    }
+
+    .sc-visual {
+        max-width: 1360px;
+        border-radius: 20px;
+        width: 100%;
+        height: 400px;
+        background: url(../images/banner2.gif);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 40px auto 60px;
+        background-color: #1A72E7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        @include mobile {
+            background-size: cover;
+            border-radius: 0;
+        }
+
+        .left {
+            width: 50%;
+            height: 100%;
+            display: flex;
+
+            @include mobile {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .right {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            color: #FFFFFF;
+            padding: 0 16px;
+
+            @include mobile {
+                width: 100%;
+                padding: 0 24px;
+                margin: 0;
+                justify-content: unset;
+            }
+
+            h2 {
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 48px;
+                letter-spacing: -0.5px;
+                margin-bottom: 9px;
+                margin-top: 92px;
+
+                .hidden {
+                    @include mobile {
+                        display: none;
+                    }
+                }
+
+                @include mobile {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 34px;
+                    letter-spacing: -0.5px;
+                    margin-top: 158px;
+
+                }
+            }
+
+            p {
+                font-size: 15px;
+                line-height: 24px;
+                letter-spacing: -0.2px;
+                margin-bottom: 30px;
+
+                @include mobile {
+                    display: none;
+                }
+
+            }
+
+            .btn {
+                min-width: 157px;
+                padding: 8px 40px;
+                border-radius: 50px;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 24px;
+                letter-spacing: -0.2px;
+                display: inline-block;
+                box-sizing: border-box;
+                text-align: center;
+                white-space: nowrap;
+                border: 2px solid #FFFFFF;
+                color: #FFFFFF;
+
+                &:hover {
+                    background-color: #FFFFFF;
+                    color: #1B1E26;
+                }
+            }
+        }
+    }
+
+    .sc-projects {
+
+        .icon-menu {
+            max-width: 1408px;
+            margin: 0 auto 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+
+            @include mobile {
+                flex-wrap: wrap;
+                gap: 60px;
+                margin-bottom: 31px;
+                padding: 0 17px;
+            }
+
+            li {
+                @include mobile {}
+
+                &:nth-child(1) a:hover img {
+                    content: url(../images/iconHomeMainMenu-hover.svg);
+                }
+
+                &:nth-child(2) a:hover img {
+                    content: url(../images/iconHomeBuild-hover.svg);
+                }
+
+                &:nth-child(3) a:hover img {
+                    content: url(../images/iconHomeOperate-hover.svg);
+                }
+
+                &:nth-child(4) a:hover img {
+                    content: url(../images/iconHomeDesign-hover.svg);
+                }
+
+                &:nth-child(5) a:hover img {
+                    content: url(../images/iconHomeTechnology-hover.svg);
+                }
+
+                &:nth-child(6) a:hover img {
+                    content: url(../images/iconHomeCopyright-hover.svg);
+                }
+
+                &:nth-child(7) a:hover img {
+                    content: url(../images/iconHomeMarketing-hover.svg);
+                }
+
+                &:nth-child(8) a:hover img {
+                    content: url(../images/iconHomeBusiness-hover.svg);
+                }
+
+                a {
+                    p {
+                        margin-top: 2px;
+                        text-align: center;
+                        color: #1B1E26;
+                        font-weight: 700;
+                        font-size: 15px;
+                        line-height: 24px;
+                        letter-spacing: -0.2px;
+                    }
+                }
+            }
+        }
+
+        .cont {
+            width: 100%;
+            margin: 0 auto 80px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 32px;
+
+            @include mobile {
+                grid-gap: 9px;
+                grid-template-columns: 1fr;
+                margin-bottom: 0 !important;
+            }
+
+            li {
+                min-width: 0;
+                height: 285px;
+                background-color: #FFFFFF;
+                border-radius: 10px;
+                outline: 1px solid #DFE8EE;
+                padding: 26px 40px;
+
+                &:hover {
+                    outline: 2px solid #1A72E7;
+                }
+                &.mobile-on {
+                    display: none;
+                    outline: none;
+        
+                    @include mobile {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: transparent;
+                        margin:0;
+                        padding: 0;
+                        min-height: 100%;
+                        
+                    }
+        
+                    a {
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 14px;
+                        letter-spacing: -0.2px;
+                        padding: 9px 24px;
+                        border: 2px solid #1A72E7;
+                        height: 32px;
+                        text-align: center;
+                        border-radius: 32px;
+                        margin-top: 20px;
+    margin-bottom: 50px;        
+                    }
+
+                }
+
+                @include mobile {
+                    border-radius: 0;
+                    border: 0;
+                    min-height: 207px;
+                    width: 100%;
+                    height: 207px;
+                    overflow: hidden;
+                    padding: 22px 24px 24px;
+                }
+
+                &.more {
+                    background-color: #5F8CAA;
+                    padding: 0;
+                    border-radius: 10px;
+                    border: none;
+                    background: url(https://img.echosting.cafe24.com/api/partner/front/images/icons/list-more-project.svg);
+
+                    @include mobile {
+                        display: none;
+                    }
+
+                    &:hover {
+                        background: url(https://img.echosting.cafe24.com/api/partner/front/images/icons/list-more-project-hover.svg);
+                        outline: none;
+                    }
+
+                    .m-title {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: flex-start;
+                        font-weight: 700;
+                        font-size: 21px;
+                        line-height: 31px;
+                        text-align: center;
+                        letter-spacing: -0.2px;
+                        color: #FFFFFF;
+                        margin-bottom: 20px;
+                        margin-top: 110px;
+
+                        img {
+                            padding-top: 20px;
+                            max-width: 100%;
+                            max-height: 100%;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+
+                .top {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    line-height: 22px;
+                    letter-spacing: -0.2px;
+
+                    span {
+                        &.location {
+                            color: #666666;
+                        }
+
+                        &.dot {
+                            background-color: #D9D9D9;
+                            width: 4px;
+                            height: 4px;
+                            color: transparent;
+                            border-radius: 50px;
+                        }
+
+                        &.d-day {
+                            color: #1A72E7;
+                        }
+
+                        margin-top: 3px;
+                        margin-right: 10px;
+                    }
+                }
+
+                .c-title {
+                    color: #1B1E26;
+                    font-weight: 700;
+                    height: 63px;
+                    font-size: 21px;
+                    line-height: 31px;
+                    letter-spacing: -0.2px;
+                    margin-bottom: 31px;
+                    word-break: break-all;
+                    max-width: 430px;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
+                    @include mobile {
+                        max-width: 100%;
+                        max-height: 52px;
+                        font-size: 16px;
+                        line-height: 26px;
+                        letter-spacing: -0.2px;
+                        margin-bottom: 24px;
+
+                    }
+                }
+
+                p {
+                    color: #999999;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 24px;
+                    letter-spacing: -0.2px;
+                    max-width: 420px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    margin-bottom: 20px;
+
+                    @include mobile {
+                        max-width: 100%;
+                        font-size: 14px;
+                        line-height: 24px;
+                        letter-spacing: -0.2px;
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .bottom {
+                    display: flex;
+                    justify-content: flex-start;
+                    border-top: 1px solid #DFE8EE;
+                    padding: 23px 0;
+                    width: 100%;
+                    color: #666666;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 24px;
+                    letter-spacing: -0.2px;
+
+                    @include mobile {
+                        padding-top: 12px;
+                    }
+
+                    img {
+                        padding: 2px 0;
+                    }
+
+                    .date {
+                        width: 100%;
+                        color: #666666;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 24px;
+                        letter-spacing: -0.2px;
+                        background-repeat: no-repeat;
+                        background-position: 0 2px;
+                        padding-left: 5px;
+                    }
+                }
+
+            }
+            
+        }
+
+      
+    }
+
+    .sc-banner {
+        background-color: #1B1E26;
+        position: relative;
+        border-radius: 10px;
+
+        span {
+            margin-top: 3px;
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        img {
+            height: 344px;
+            max-width: 344px;
+            position: absolute;
+            left: 0;
+            margin-left: 45px;
+        }
+
+        .btn {
+            min-width: 157px;
+            padding: 8px 40px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            display: inline-block;
+            box-sizing: border-box;
+            text-align: center;
+            white-space: nowrap;
+            border: 2px solid #FFFFFF;
+            color: #FFFFFF;
+
+            &:hover {
+                background-color: #FFFFFF;
+                color: #1B1E26;
+            }
+        }
+    }
+
+}
+
+.sc-slide {
+    background-color: #1A72E7;
+    padding-bottom: 120px;
+    overflow-x: hidden;
+    position: relative;
+
+    h2 {
+        margin: 120px auto 30px;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: -0.5px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .review-silde {
+        position: relative;
+        overflow: hidden;
+
+        .main-swiper {
+            display: flex;
+            // gap: 32px;
+
+            .cont-box {
+                min-width: 432px;
+                max-width: 432px !important;
+                height: 319px;
+                background-color: #FFFFFF;
+                border-radius: 10px;
+                padding: 40px 40px 36px;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+
+                .top {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+
+                    .title {
+                        h3 {
+                            color: #1A72E7;
+                            font-weight: 700;
+                            font-size: 21px;
+                            line-height: 31px;
+                            letter-spacing: -0.2px;
+                            margin-bottom: 19px;
+                        }
+
+                        .point {
+                            width: 100%;
+                            float: left;
+                            height: 20px;
+                            background: url(//img.echosting.cafe24.com/api/partner/front/images/ic-star-green.svg) no-repeat 0 0;
+                            font-size: 0;
+                        }
+                    }
+
+                    .logo {
+                        border-radius: 100%;
+                        width: 76px;
+                        height: 76px;
+                    }
+                }
+
+                .bottom {
+                    width: 100%;
+                    position: relative;
+                    height: 167px;
+
+                    .txt-wrap {
+                        display: flex;
+                        width: 100%;
+                    }
+
+                    .txt-box {
+                        z-index: 99;
+                        margin-top: 13px;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 4;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        color: #666666;
+                        font-size: 17px;
+                        line-height: 30px;
+                        letter-spacing: -0.2px;
+                        width: 100%;
+                    }
+
+                    .pagination {
+                        display: flex;
+                        position: absolute;
+                        z-index: 99;
+                        align-items: center;
+                        justify-content: center;
+                        bottom: 0;
+                        width: 100%;
+                        height: 5px;
+
+                        span {
+                            background: #DFE8EE;
+                            opacity: 1;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+                        }
+
+                        .swiper-pagination-bullet-active {
+                            background: #5F8CAA;
+                        }
+
+
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    .btn-next,
+
+    .btn-prev {
+        position: absolute;
+        content: '';
+        background-color: #FFFFFF;
+        width: 60px;
+        height: 60px;
+        border-radius: 40px;
+        border: 1px solid #C7D7E1;
+        font-size: 0;
+        cursor: pointer;
+    }
+
+    .btn-next {
+        top: calc(50% - 5px);
+        right: -50px;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            background: url(//img.echosting.cafe24.com/api/partner/front/images/icons/banner-carousel-right.png) center no-repeat;
+            width: 60px;
+            height: 60px;
+            margin-right: -4px;
+        }
+    }
+
+    .btn-prev {
+        top: calc(50% - 5px);
+        left: -50px;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            background: url(//img.echosting.cafe24.com/api/partner/front/images/icons/banner-carousel-left.png) center no-repeat;
+            width: 60px;
+            height: 60px;
+            margin-left: -4px;
+        }
+    }
+}
+
+.sc-process {
+    background-color: #E9F1FD;
+    padding: 120px 0;
+    overflow-x: hidden;
+
+    .wrap {
+        margin: 0 auto;
+        position: relative;
+        max-width: 1568px;
+
+        h2 {
+            padding: 0 24px;
+        }
+
+        .process-slide {
+            max-width: 1360px;
+            margin-left: auto;
+            overflow: visible;
+
+            .swiper-wrapper {
+                display: flex;
+
+                .swiper-slide {
+                    background-color: #FFFFFF;
+                    border-radius: 10px;
+                    min-height: 554px;
+                    min-width: 432px;
+                    max-width: 432px;
+                    padding: 34px;
+                    outline: 1px solid #DFE8EE;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    h3 {
+                        color: #1A72E7;
+                        font-weight: 700;
+                        font-size: 21px;
+                        line-height: 31px;
+                        letter-spacing: -0.2px;
+                        margin-top: 30px;
+                    }
+
+                    p {
+                        color: #666666;
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 30px;
+                        letter-spacing: -0.2px;
+                        margin-top: 10px;
+                        max-width: 343px;
+                        word-break: keep-all;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sc-faq {
+    width: 100%;
+    background: #fff;
+    margin: 120px auto 80px;
+    max-width: 1408px;
+
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            color: #1B1E26;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 48px;
+            letter-spacing: -0.5px;
+            padding-bottom: 40px;
+        }
+
+        .faq-title {
+            width: 27%;
+
+            .list {
+                li {
+                    margin-bottom: 4px;
+                    cursor: pointer;
+                    margin-bottom: 10px;
+
+                    a {
+                        margin-bottom: 10px;
+                        color: #999999;
+                        font-weight: 700;
+                        font-size: 21px;
+                        line-height: 31px;
+                        letter-spacing: -0.2px;
+                        text-decoration: none;
+
+                        &.on {
+                            color: #1B1E26;
+                        }
+                    }
+                }
+            }
+        }
+
+        .faq-list {
+            width: 896px;
+            margin-top: -22px;
+
+            li {
+                border-bottom: 1px solid #C7D7E1;
+            }
+
+            .client {
+                display: none;
+
+                &.on {
+                    display: block;
+                }
+
+                .title {
+                    cursor: pointer;
+                    padding: 26px 26px 25px 0;
+                    user-select: none;
+                    color: #1B1E26;
+                    font-weight: 700;
+                    font-size: 17px;
+                    line-height: 30px;
+                    letter-spacing: -0.2px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    transition: all 0.3s ease;
+
+                    &::after {
+                        content: '';
+                        display: inline-block;
+                        background: url(//img.echosting.cafe24.com/api/partner/front/images/icons/faq-accordion-down.png) center;
+                        width: 12px;
+                        height: 8px;
+                    }
+
+                    &.on {
+                        color: #1A72E7;
+                        border-bottom: 1px solid #1A72E7;
+                    }
+
+                    &.on::after {
+                        background: url(//img.echosting.cafe24.com/api/partner/front/images/icons/faq-accordion-up.png) center;
+                    }
+                }
+
+                .text {
+                    padding: 20px 0 29px;
+                    color: #666666;
+                    font-weight: 500;
+                    font-size: 17px;
+                    line-height: 30px;
+                    letter-spacing: -0.2px;
+                    display: none;
+
+                    .blue-txt {
+                        color: #1A72E7;
+                    }
+
+                    &.on {
+                        display: block;
+                    }
+                }
+            }
+
+            .partner {
+                display: none;
+
+                &.on {
+                    display: block;
+                }
+
+                .title {
+                    cursor: pointer;
+                    padding: 26px 26px 25px 0;
+                    user-select: none;
+                    color: #1B1E26;
+                    font-weight: 700;
+                    font-size: 17px;
+                    line-height: 30px;
+                    letter-spacing: -0.2px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    transition: all 0.3s ease;
+
+                    &::after {
+                        content: '';
+                        display: inline-block;
+                        background: url(//img.echosting.cafe24.com/api/partner/front/images/icons/faq-accordion-down.png) center;
+                        width: 12px;
+                        height: 8px;
+                    }
+
+                    &.on {
+                        color: #1A72E7;
+                        border-bottom: 1px solid #1A72E7;
+                    }
+
+                    &.on::after {
+                        background: url(//img.echosting.cafe24.com/api/partner/front/images/icons/faq-accordion-up.png) center;
+                    }
+                }
+
+                .text {
+                    padding: 20px 0 29px;
+                    color: #666666;
+                    font-weight: 500;
+                    font-size: 17px;
+                    line-height: 30px;
+                    letter-spacing: -0.2px;
+                    display: none;
+
+                    &.on {
+                        display: block;
+                    }
+                }
+            }
+
+            .more-btn {
+                margin-top: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .btn-faq {
+                    min-width: 157px;
+                    padding: 8px 40px;
+                    border-radius: 50px;
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 24px;
+                    letter-spacing: -0.2px;
+                    display: inline-block;
+                    box-sizing: border-box;
+                    text-align: center;
+                    white-space: nowrap;
+                    background-color: transparent;
+                    border: 2px solid #1A72E7;
+                    color: #1A72E7;
+
+                    &:hover {
+                        color: #FFFFFF;
+                        background-color: #1A72E7;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.sc-banner2 {
+    font-weight: 700;
+    max-width: 1408px;
+    height: 188px;
+    padding: 0 24px;
+    margin: 0 auto 128px;
+    width: 100%;
+
+    .wrap {
+        max-width: 1360px;
+        height: 188px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: #FFFFFF;
+        overflow-y: hidden;
+        background-color: #1A72E7;
+        border-radius: 10px;
+
+        .img {
+            width: 352px;
+            margin-left: -63px;
+
+            img {
+                width: 352px;
+                margin-left: 41px;
+            }
+        }
+
+        .text {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 60%;
+
+            .title {
+                h2 {
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 38px;
+                    letter-spacing: -0.5px;
+                    text-align: center;
+                    margin-right: 24px;
+                }
+            }
+
+            .btn {
+                min-width: 157px;
+                padding: 8px 40px;
+                border-radius: 50px;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 24px;
+                letter-spacing: -0.2px;
+                display: inline-block;
+                box-sizing: border-box;
+                text-align: center;
+                white-space: nowrap;
+                border: 2px solid #FFFFFF;
+                color: #FFFFFF;
+
+                &:hover {
+                    background-color: #FFFFFF;
+                    color: #1B1E26;
+                }
+            }
+        }
+    }
+}

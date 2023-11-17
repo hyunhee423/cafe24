@@ -1,0 +1,76 @@
+{
+    "projectList":[
+        {
+            "resident":true,
+            "dDay":7,
+            "title":"사내복지 쇼핑몰 플랫폼 개발1",
+            "desc":"쇼핑몰 구축, 커스텀 기능 제작, 모바일 앱 제작, 웹·앱디자인, JavaScript·CSS, iOS, Android, 데이터베이스",
+            "dDay":7,
+            "period":90,
+            "cate":[1,3,5]
+        },
+        {
+            "resident":true,
+            "dDay":7,
+            "title":"사내복지 쇼핑몰 플랫폼 개발1",
+            "desc":"쇼핑몰 구축, 커스텀 기능 제작, 모바일 앱 제작, 웹·앱디자인, JavaScript·CSS, iOS, Android, 데이터베이스",
+            "dDay":7,
+            "period":44,
+            "cate":[1,2,4]
+        },
+        {
+            "resident":true,
+            "dDay":7,
+            "title":"사내복지 쇼핑몰 플랫폼 개발1",
+            "desc":"쇼핑몰 구축, 커스텀 기능 제작, 모바일 앱 제작, 웹·앱디자인, JavaScript·CSS, iOS, Android, 데이터베이스",
+            "dDay":7,
+            "period":90,
+            "cate":[1,3,5]
+        },
+        {
+            "resident":true,
+            "dDay":7,
+            "title":"사내복지 쇼핑몰 플랫폼 개발1",
+            "desc":"쇼핑몰 구축, 커스텀 기능 제작, 모바일 앱 제작, 웹·앱디자인, JavaScript·CSS, iOS, Android, 데이터베이스",
+            "dDay":7,
+            "period":90,
+            "cate":[1,3,5]
+        },
+        {
+            "resident":true,
+            "dDay":7,
+            "title":"사내복지 쇼핑몰 플랫폼 개발1",
+            "desc":"쇼핑몰 구축, 커스텀 기능 제작, 모바일 앱 제작, 웹·앱디자인, JavaScript·CSS, iOS, Android, 데이터베이스",
+            "dDay":7,
+            "period":90,
+            "cate":[1,3,5]
+        },
+        {
+            "resident":true,
+            "dDay":7,
+            "title":"사내복지 쇼핑몰 플랫폼 개발1",
+            "desc":"쇼핑몰 구축, 커스텀 기능 제작, 모바일 앱 제작, 웹·앱디자인, JavaScript·CSS, iOS, Android, 데이터베이스",
+            "dDay":7,
+            "period":90,
+            "cate":[1,3,5]
+        },
+        {
+            "resident":true,
+            "dDay":7,
+            "title":"사내복지 쇼핑몰 플랫폼 개발1",
+            "desc":"쇼핑몰 구축, 커스텀 기능 제작, 모바일 앱 제작, 웹·앱디자인, JavaScript·CSS, iOS, Android, 데이터베이스",
+            "dDay":7,
+            "period":90,
+            "cate":[1,3,5]
+        },
+        {
+            "resident":true,
+            "dDay":7,
+            "title":"사내복지 쇼핑몰 플랫폼 개발1",
+            "desc":"쇼핑몰 구축, 커스텀 기능 제작, 모바일 앱 제작, 웹·앱디자인, JavaScript·CSS, iOS, Android, 데이터베이스",
+            "dDay":7,
+            "period":90,
+            "cate":[1,3,5]
+        }
+    ]
+}
