@@ -156,3 +156,13 @@ filterData.forEach((element,index) => {
   // console.log(json);
 })
 }
+
+$(".footer li .sub-btn").click(function() {
+  $('.footer').find(".sub-list").slideToggle();
+});
+ 
+ 
+function toggleMenu() {
+  var siteList = document.querySelector('.ff-sub-m .site-list');
+  siteList.style.display = (siteList.style.display === 'none') ? 'block' : 'none';
+}

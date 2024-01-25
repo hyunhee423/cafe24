@@ -1,6 +1,7 @@
-body{
+body {
     font-family: 'Pretendard-Regular';
 }
+
 .inner {
     max-width: 1408px;
     width: 100%;
@@ -8,7 +9,8 @@ body{
     margin-right: auto;
     position: relative;
     padding: 0 24px;
-    @include mobile{
+
+    @include mobile {
         padding: 0;
     }
 }
@@ -31,13 +33,14 @@ body{
     max-width: 1408px;
     width: 100%;
     margin: 0 auto 40px;
-    @include mobile{
-     font-weight: 700;
-    font-size: 17px;
-    line-height: 28px;
-    letter-spacing: -0.2px;
-    margin-bottom: 23px;
-    padding: 0 17px;
+
+    @include mobile {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 28px;
+        letter-spacing: -0.2px;
+        margin-bottom: 23px;
+        padding: 0 17px;
     }
 }
 
@@ -51,6 +54,12 @@ body{
     border-radius: 20px;
     color: #FFFFFF;
     overflow-y: hidden;
+    .mob-br{
+        display: none;
+        @include mobile{
+            display: block;
+        }
+    }
 
     .text {
         position: absolute;
@@ -62,23 +71,40 @@ body{
         padding-left: 363px;
         padding-right: 60px;
 
-        .title{
-            text-align: center;
-            h2 {
-                font-weight: 700;
-                font-size: 28px;
-                line-height: 38px;
-                letter-spacing: -0.5px;
-                text-align: center;
-            }    
-        }     
-
-        img {
-            height: 344px;
-            max-width: 344px;
+        @include mobile {
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 24px;
             position: absolute;
-            left: 0;
-            margin-left: 45px;
+            top: 40px;
         }
+    }
+
+    .title {
+        text-align: center;
+
+        h2 {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 38px;
+            letter-spacing: -0.5px;
+            text-align: center;
+
+            @include mobile {
+                font-weight: 700;
+                font-size: 21px;
+                line-height: 31px;
+                letter-spacing: -0.2px;
+                text-align: left;
+            }
+        }
+    }
+
+    img {
+        height: 344px;
+        max-width: 344px;
+        position: absolute;
+        left: 0;
+        margin-left: 45px;
     }
 }

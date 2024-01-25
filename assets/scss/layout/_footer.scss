@@ -37,9 +37,10 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            padding-bottom: 84px;
+            padding-bottom: 172px;
+            
 
-            h5 {
+            h5 , a.sub-btn {
                 color: #FFFFFF;
                 font-weight: 700;
                 font-size: 14px;
@@ -70,6 +71,21 @@
             .group {
                 position: relative;
 
+                @include mobile{
+                    &:nth-child(2){
+                        display: none;
+                    }
+                    &:nth-child(3){
+                        display: none;
+                    }
+                    &:nth-child(4){
+                        display: none;
+                    }
+                    &:nth-child(5){
+                        display: none;
+                    }
+                }
+                
                 ul {
                     li {
                         padding: 5px 0 2px;
@@ -99,6 +115,7 @@
                         }
                     }
                 }
+                
 
                 .site-list {
                     z-index: 10;
@@ -111,11 +128,11 @@
                     box-shadow: 0 1px 10px 0rgba(0, 0, 0, .08);
                     border: 1px solid #e8e8e8;
                     width: 140px;
-                    padding: 12px 0;
                     height: auto;
                     display: none;
 
                     li {
+                        padding: 0;
                         &.line {
                             margin-top: 8px;
                             padding-top: 8px;
@@ -149,6 +166,12 @@
             p {
                 margin-bottom: 3px;
                 letter-spacing: -0.2px;
+                .spacing{
+                    display: none;
+                    @include mobile{
+                        display: block;
+                    }
+                }
 
                 &.last {
                     margin-top: 17px;
@@ -168,6 +191,10 @@
                 padding-top: 23px;
                 margin-top: 27px;
                 border-top: 1px solid #444B59;
+                @include mobile{
+                    align-items: flex-start;
+                    flex-direction: column-reverse;
+                }
 
                 .f-menu {
                     display: flex;
@@ -175,6 +202,9 @@
                     justify-content: flex-end;
                     li {
                         margin-left: 10px;
+                        @include mobile{
+                            margin-left: 0;margin-right: 10px;
+                        }
                         &.bold{
                             a{
                                 color: #FFFFFF;
